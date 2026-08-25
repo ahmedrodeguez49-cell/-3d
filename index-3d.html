@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK PALLETS - Sustainable & Custom Pallets in Houston, TX</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .header-active-tab {
+            border-bottom: 2px solid #0F2942;
+            color: #0F2942 !important;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0F2942',       /* Dark slate blue matching the UI headers precisely */
+                            navy: '#0B1E30',       /* Even darker blue for footers/hero background */
+                            red: '#C3073F',        /* Branding red line accents and primary highlights */
+                            lightBlue: '#F4F7FA',  /* Soft gray-blue background */
+                            accentBlue: '#0066CC', /* Action links and interactive elements */
+                            cardBg: '#FFFFFF',
+                            borderColor: '#E2E8F0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+:root{--ak-cyan:#2dd4bf;--ak-red:#c3073f} body{overflow-x:hidden} body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9998;background:radial-gradient(circle at var(--mx,50%) var(--my,30%),rgba(45,212,191,.08),transparent 28%)}
+.ak-3d-hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 78% 30%,rgba(45,212,191,.16),transparent 22%),radial-gradient(circle at 18% 70%,rgba(195,7,63,.12),transparent 25%),linear-gradient(135deg,#06111f,#0b2240 52%,#071725);border-radius:32px;box-shadow:0 35px 100px rgba(5,20,40,.35)}
+.ak-3d-hero:after{content:"";position:absolute;inset:-35%;z-index:-1;background:conic-gradient(from 0deg,transparent 0 20%,rgba(45,212,191,.1),transparent 35% 65%,rgba(195,7,63,.08),transparent 80%);animation:akspin 18s linear infinite}@keyframes akspin{to{transform:rotate(360deg)}}
+.ak-grid{position:absolute;inset:auto -10% -38%;height:70%;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;transform:perspective(500px) rotateX(62deg);mask-image:linear-gradient(to top,black,transparent);opacity:.45}
+.ak-orb{position:absolute;border-radius:50%;box-shadow:0 0 35px currentColor;animation:akfloat 7s ease-in-out infinite}.ak-orb.one{width:14px;height:14px;right:17%;top:18%;color:#2dd4bf}.ak-orb.two{width:8px;height:8px;right:31%;top:62%;color:#fff;animation-delay:1.5s}.ak-orb.three{width:10px;height:10px;left:46%;top:24%;color:#c3073f;animation-delay:3s}@keyframes akfloat{50%{transform:translateY(-28px) scale(1.25)}}
+.ak-glass{background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 1px rgba(255,255,255,.15),0 20px 55px rgba(0,0,0,.2);backdrop-filter:blur(16px)}
+.ak-depth{transform:translateZ(35px)} .ak-tilt{transform-style:preserve-3d;transition:transform .18s ease,box-shadow .25s ease}.ak-tilt:hover{box-shadow:0 30px 70px rgba(11,34,64,.18)}
+.ak-reveal{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s ease}.ak-reveal.is-visible{opacity:1;transform:none}
+.ak-pallet-scene{perspective:1100px;transform-style:preserve-3d;transition:transform .2s ease}.ak-pallet{width:min(420px,72vw);height:180px;position:relative;transform-style:preserve-3d;transform:rotateX(58deg) rotateZ(-7deg) rotateY(-15deg);animation:akpallet 6s ease-in-out infinite}@keyframes akpallet{0%,100%{transform:rotateX(58deg) rotateZ(-7deg) rotateY(-15deg)}50%{transform:rotateX(55deg) rotateZ(-5deg) rotateY(-8deg) translateY(-16px)}}
+.ak-pallet .top{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#d39a50 0 18px,#1b2830 18px 25px);border:5px solid #0c1923;border-radius:8px;box-shadow:0 35px 0 -8px #0b1620,0 45px 50px rgba(0,0,0,.4);transform:translateZ(38px)}.ak-pallet .top:after{content:"";position:absolute;inset:10px;background:repeating-linear-gradient(90deg,transparent 0 54px,rgba(20,27,31,.85) 54px 66px)}.ak-pallet .front,.ak-pallet .side{position:absolute;background:#8d5a27;border:5px solid #0c1923}.ak-pallet .front{left:0;right:0;bottom:-44px;height:48px;transform:rotateX(-90deg);transform-origin:top}.ak-pallet .side{top:0;right:-50px;width:50px;height:180px;transform:rotateY(90deg);transform-origin:left}.ak-pallet .glow{position:absolute;inset:20%;border-radius:50%;background:#2dd4bf;filter:blur(55px);opacity:.16;transform:translateZ(-50px)}
+.ak-particle{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.45;animation:akparticle 8s linear infinite}@keyframes akparticle{from{transform:translateY(40vh);opacity:0}20%{opacity:.6}to{transform:translate(60px,-120vh);opacity:0}}
+.ak-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .8rem;border-radius:999px;background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.22);color:#99f6e4;font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+@media(max-width:768px){.ak-3d-hero{border-radius:22px}.ak-pallet{width:300px;height:125px}.ak-pallet .side{height:125px}.ak-pallet .front{bottom:-34px;height:38px}}
+</style>
+</head>
+<body class="bg-[#F8FAFC] text-gray-900">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200/80 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            
+            <!-- Logo matching original upload (Texas Outline, Pallet & JAK AK Pallets branding) -->
+            <a href="#" onclick="switchTab('homepage')" class="flex items-center space-x-3 cursor-pointer">
+                <div class="w-14 h-14 flex items-center justify-center rounded-lg bg-white">
+                    <!-- Vector Graphic replica of the "edited-image.png" logo (Texas Flag Outline, JAK AK PALLETS, Wooden Pallet) -->
+                    <img src="ak-pallets-logo.jpeg" alt="AK Pallets Logo" class="w-10 h-10 object-contain" />
+                </div>
+                <div class="ml-2">
+                    <span class="text-xl font-extrabold text-brand-blue tracking-tight block leading-none">AK PALLET</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-[14px] font-bold text-gray-500">
+                <a href="#" onclick="switchTab('homepage')" class="py-5 cursor-pointer transition-all duration-200 header-active-tab" id="nav-home">Homepage</a>
+                <a href="#" onclick="switchTab('quote')" class="py-5 cursor-pointer transition-all duration-200 hover:text-brand-blue" id="nav-quote">Get Quote</a>
+            </nav>
+
+            <!-- Burger menu button -->
+            <div class="flex items-center space-x-4 md:hidden">
+                <button onclick="toggleMobileMenu()" class="text-brand-blue text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu list -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-3 shadow-md">
+            <a href="#" onclick="switchTab('homepage'); toggleMobileMenu()" class="block text-brand-blue font-bold py-2 border-b border-gray-100">Homepage</a>
+            <a href="#" onclick="switchTab('quote'); toggleMobileMenu()" class="block text-brand-blue font-bold py-2 border-b border-gray-100">Get Quote</a>
+        </div>
+    </header>
+
+    <!-- MAIN APP WRAPPER -->
+    <main class="pt-24 bg-brand-lightBlue/30 min-h-screen">
+
+        <!-- 1. HOMEPAGE TAB PANEL (Exact layout of Screenshot 5 & 6) -->
+        <div id="tab-homepage" class="block animate-fade-in">
+            
+            <!-- CINEMATIC 3D HERO -->
+<section class="py-8 md:py-12">
+<div class="container mx-auto px-4 md:px-6 max-w-7xl"><div class="ak-3d-hero min-h-[680px] md:min-h-[650px]">
+<div class="ak-grid"></div><div class="ak-orb one"></div><div class="ak-orb two"></div><div class="ak-orb three"></div><div id="ak-particles"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 min-h-[680px] md:min-h-[650px]">
+<div class="lg:col-span-7 p-7 md:p-14 lg:p-16 flex flex-col justify-center">
+<div class="ak-badge mb-6 ak-reveal"><span class="w-2 h-2 rounded-full bg-emerald-300 animate-pulse"></span> Houston Pallet Systems • Live</div>
+<h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-black tracking-[-.04em] leading-[.95] ak-depth ak-reveal">PALLETS<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-teal-200 to-teal-400">BUILT FOR</span><br>THE NEXT MOVE.</h1>
+<p class="mt-7 max-w-xl text-slate-300 text-sm md:text-base leading-7 ak-reveal">Custom, recycled, heat-treated and rapid-response pallet solutions engineered for Houston supply chains.</p>
+<div class="flex flex-wrap gap-3 mt-8 ak-reveal"><button onclick="switchTab('quote')" class="group bg-white text-[#0B2240] font-black px-7 py-4 rounded-2xl shadow-xl hover:-translate-y-1 transition-all">Get a Quote <span class="inline-block ml-2 group-hover:translate-x-1">→</span></button><a href="tel:+13466047419" class="ak-glass text-white font-bold px-7 py-4 rounded-2xl hover:bg-white/15 transition-all"><i class="fa-solid fa-phone mr-2"></i> Call Dispatch</a></div>
+<div class="grid grid-cols-3 gap-3 max-w-lg mt-10 ak-reveal"><div class="ak-glass rounded-2xl p-4"><div class="text-xl font-black text-white">24/7</div><div class="text-[9px] uppercase tracking-widest text-slate-400 mt-1">Response</div></div><div class="ak-glass rounded-2xl p-4"><div class="text-xl font-black text-white">ISPM-15</div><div class="text-[9px] uppercase tracking-widest text-slate-400 mt-1">Ready</div></div><div class="ak-glass rounded-2xl p-4"><div class="text-xl font-black text-white">B2B</div><div class="text-[9px] uppercase tracking-widest text-slate-400 mt-1">Focused</div></div></div>
+</div>
+<div class="lg:col-span-5 relative flex items-center justify-center p-8 md:p-12"><div class="absolute w-72 h-72 md:w-96 md:h-96 rounded-full border border-white/10 animate-[spin_18s_linear_infinite]"></div><div class="absolute w-60 h-60 md:w-80 md:h-80 rounded-full border border-teal-300/10 animate-[spin_12s_linear_infinite_reverse]"></div><div class="ak-pallet-scene relative z-10"><div class="ak-pallet"><div class="glow"></div><div class="top"></div><div class="front"></div><div class="side"></div></div></div><img src="ak-pallets-logo.jpeg" alt="AK Pallets" class="absolute bottom-8 right-6 w-28 md:w-36 rounded-2xl bg-white/95 p-2 shadow-2xl"></div>
+</div></div></div></section>
+
+            <!-- Core Operations & Services Section (As per Screenshot 1 & 2) -->
+            <section class="py-16 bg-white">
+                <div class="container mx-auto px-6 max-w-5xl">
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-black text-brand-blue tracking-tight mb-2" id="section-services-title">Core Operations & Services</h2>
+                        <div class="w-16 h-1 bg-brand-blue"></div>
+                    </div>
+
+                    <!-- Services Grid/List Block layout matching screenshots precisely -->
+                    <div class="space-y-12">
+                        <!-- Service item 1 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-6 border-b border-gray-100 gap-6">
+                            <div class="flex items-start space-x-5 max-w-3xl">
+                                <!-- Icon Box -->
+                                <div class="w-14 h-14 bg-[#14B8A6]/10 border border-[#14B8A6]/20 rounded-xl flex items-center justify-center text-[#14B8A6] flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-hammer text-2xl"></i>
+                                </div>
+                                <div class="space-y-2">
+                                    <h3 class="text-xl font-extrabold text-brand-blue" id="srv1-title">Custom New Pallets</h3>
+                                    <p class="text-[14px] text-gray-500 leading-relaxed" id="srv1-desc">
+                                        We manufacture custom new pallets built specifically for your unique operational requirements. Using high-quality lumber, our expert team designs pallets that optimize your supply chain, reduce product damage, and improve warehouse efficiency. Perfect for specialized equipment or non-standard load dimensions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <button onclick="switchTab('quote')" class="bg-[#0B2240] hover:bg-brand-red text-white text-xs font-bold px-6 py-2.5 rounded-full transition-all duration-200" id="srv-btn1">Initialize</button>
+                            </div>
+                        </div>
+
+                        <!-- Service item 2 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-6 border-b border-gray-100 gap-6">
+                            <div class="flex items-start space-x-5 max-w-3xl">
+                                <div class="w-14 h-14 bg-[#10B981]/10 border border-[#10B981]/20 rounded-xl flex items-center justify-center text-[#10B981] flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-recycle text-2xl"></i>
+                                </div>
+                                <div class="space-y-2">
+                                    <h3 class="text-xl font-extrabold text-brand-blue" id="srv2-title">Recycled & Reconditioned Pallets</h3>
+                                    <p class="text-[14px] text-gray-500 leading-relaxed" id="srv2-desc">
+                                        Our recycled and reconditioned pallets offer an eco-friendly and budget-conscious alternative to new pallets without sacrificing reliability. We meticulously inspect, repair, and grade every recycled pallet to ensure it meets strict performance standards for your supply chain.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <button onclick="switchTab('quote')" class="bg-[#0B2240] hover:bg-brand-red text-white text-xs font-bold px-6 py-2.5 rounded-full transition-all duration-200" id="srv-btn2">Initialize</button>
+                            </div>
+                        </div>
+
+                        <!-- Service item 3 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-6 border-b border-gray-100 gap-6">
+                            <div class="flex items-start space-x-5 max-w-3xl">
+                                <div class="w-14 h-14 bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-xl flex items-center justify-center text-[#3B82F6] flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-fire text-2xl"></i>
+                                </div>
+                                <div class="space-y-2">
+                                    <h3 class="text-xl font-extrabold text-brand-blue" id="srv3-title">Heat Treated (ISPM-15) Pallets</h3>
+                                    <p class="text-[14px] text-gray-500 leading-relaxed" id="srv3-desc">
+                                        Ensure smooth international shipping with our ISPM-15 certified heat-treated pallets. We strictly adhere to international phytosanitary standards to prevent the spread of wood-borne pests, guaranteeing your goods clear customs without costly delays or quarantines.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <button onclick="switchTab('quote')" class="bg-[#0B2240] hover:bg-brand-red text-white text-xs font-bold px-6 py-2.5 rounded-full transition-all duration-200" id="srv-btn3">Initialize</button>
+                            </div>
+                        </div>
+
+                        <!-- Service item 4 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-6 gap-6">
+                            <div class="flex items-start space-x-5 max-w-3xl">
+                                <div class="w-14 h-14 bg-[#8B5CF6]/10 border border-[#8B5CF6]/20 rounded-xl flex items-center justify-center text-[#8B5CF6] flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-rotate text-2xl"></i>
+                                </div>
+                                <div class="space-y-2">
+                                    <h3 class="text-xl font-extrabold text-brand-blue" id="srv4-title">Pallet Retrieval & Buy-Back Program</h3>
+                                    <p class="text-[14px] text-gray-500 leading-relaxed" id="srv4-desc">
+                                        Don't let unused pallets clutter your valuable warehouse space. Our retrieval and buy-back program provides efficient removal of your surplus or broken pallets. We pay competitive rates for reusable pallets and responsibly recycle those at the end of their lifecycle.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <button onclick="switchTab('quote')" class="bg-[#0B2240] hover:bg-brand-red text-white text-xs font-bold px-6 py-2.5 rounded-full transition-all duration-200" id="srv-btn4">Initialize</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Industries Served Section (Exact Replica of Screenshot 3 layout) -->
+            <section class="py-16 bg-brand-lightBlue">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    <div class="mb-10">
+                        <h2 class="text-3xl font-black text-brand-blue tracking-tight" id="ind-title">Industries Served</h2>
+                        <p class="text-sm text-gray-500 mt-1" id="ind-desc">Adaptable logistics frameworks designed for specific sector requirements.</p>
+                    </div>
+
+                    <!-- 4 Column Grid Card set -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Industry 1 -->
+                        <div class="ak-tilt ak-reveal bg-white rounded-2xl border border-gray-200/80 shadow-sm flex flex-col justify-between overflow-hidden">
+                            <div class="p-6 space-y-4">
+                                <div class="w-10 h-10 bg-[#EFF6FF] text-brand-blue rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-gears"></i>
+                                </div>
+                                <h4 class="font-bold text-brand-blue text-lg" id="ind1-title">Manufacturing</h4>
+                                <p class="text-[13px] text-gray-500 leading-relaxed" id="ind1-desc">
+                                    Reliable, heavy-duty pallets designed to support raw materials and finished goods safely throughout the production process.
+                                </p>
+                            </div>
+                            <div class="bg-[#F8FAFC] border-t border-gray-100 p-5">
+                                <span class="text-[10px] font-black text-gray-400 tracking-wider block mb-1">SCENARIO PROFILE</span>
+                                <p class="text-[11px] text-brand-blue font-bold leading-relaxed" id="ind1-scen">Moving heavy machinery components, automotive parts, and bulk raw materials...</p>
+                            </div>
+                        </div>
+
+                        <!-- Industry 2 -->
+                        <div class="ak-tilt ak-reveal bg-white rounded-2xl border border-gray-200/80 shadow-sm flex flex-col justify-between overflow-hidden">
+                            <div class="p-6 space-y-4">
+                                <div class="w-10 h-10 bg-[#EFF6FF] text-brand-blue rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-warehouse"></i>
+                                </div>
+                                <h4 class="font-bold text-brand-blue text-lg" id="ind2-title">Warehousing & Distribution</h4>
+                                <p class="text-[13px] text-gray-500 leading-relaxed" id="ind2-desc">
+                                    Standardized and custom pallet solutions built to withstand the rigorous demands of fast-paced supply chain environments and rackings.
+                                </p>
+                            </div>
+                            <div class="bg-[#F8FAFC] border-t border-gray-100 p-5">
+                                <span class="text-[10px] font-black text-gray-400 tracking-wider block mb-1">SCENARIO PROFILE</span>
+                                <p class="text-[11px] text-brand-blue font-bold leading-relaxed" id="ind2-scen">High-volume cross-docking operations, automated storage and retrieval systems...</p>
+                            </div>
+                        </div>
+
+                        <!-- Industry 3 -->
+                        <div class="ak-tilt ak-reveal bg-white rounded-2xl border border-gray-200/80 shadow-sm flex flex-col justify-between overflow-hidden">
+                            <div class="p-6 space-y-4">
+                                <div class="w-10 h-10 bg-[#EFF6FF] text-brand-blue rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </div>
+                                <h4 class="font-bold text-brand-blue text-lg" id="ind3-title">Retail & Grocery</h4>
+                                <p class="text-[13px] text-gray-500 leading-relaxed" id="ind3-desc">
+                                    Clean, hygienic, and display-ready pallets tailored for direct-to-store deliveries, ensuring consumer packaged goods arrive safely.
+                                </p>
+                            </div>
+                            <div class="bg-[#F8FAFC] border-t border-gray-100 p-5">
+                                <span class="text-[10px] font-black text-gray-400 tracking-wider block mb-1">SCENARIO PROFILE</span>
+                                <p class="text-[11px] text-brand-blue font-bold leading-relaxed" id="ind3-scen">Transporting perishable foods, beverages, and daily household items from central...</p>
+                            </div>
+                        </div>
+
+                        <!-- Industry 4 -->
+                        <div class="ak-tilt ak-reveal bg-white rounded-2xl border border-gray-200/80 shadow-sm flex flex-col justify-between overflow-hidden">
+                            <div class="p-6 space-y-4">
+                                <div class="w-10 h-10 bg-[#EFF6FF] text-brand-blue rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-wheat-awn"></i>
+                                </div>
+                                <h4 class="font-bold text-brand-blue text-lg" id="ind4-title">Agriculture & Farming</h4>
+                                <p class="text-[13px] text-gray-500 leading-relaxed" id="ind4-desc">
+                                    Durable and well-ventilated pallets perfectly suited for the challenging environments of harvesting, processing, and transporting fresh produce.
+                                </p>
+                            </div>
+                            <div class="bg-[#F8FAFC] border-t border-gray-100 p-5">
+                                <span class="text-[10px] font-black text-gray-400 tracking-wider block mb-1">SCENARIO PROFILE</span>
+                                <p class="text-[11px] text-brand-blue font-bold leading-relaxed" id="ind4-scen">Field-to-facility transit of seasonal crops, providing structural integrity while allowin...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sustainability & Circular Supply Section (Exact Replica of Screenshot 4) -->
+            <section class="py-16 bg-white">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        
+                        <!-- Left explanation -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="w-12 h-12 bg-[#EFF6FF] text-brand-blue rounded-xl flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-leaf text-[#10B981]"></i>
+                            </div>
+                            <h2 class="text-3xl font-black text-brand-blue tracking-tight leading-tight" id="sust-title">Sustainability & Circular Supply</h2>
+                            <p class="text-[14px] text-gray-500 leading-relaxed" id="sust-desc">
+                                Building a modern eco-graphic loop. Our commitment to sustainability drives real impact, transforming traditional pallet usage into an efficient, circular operation that minimizes waste and maximizes resource yield across the entire logistics chain.
+                            </p>
+                        </div>
+
+                        <!-- Right Grid metrics with identical values and titles as Screenshot 4 -->
+                        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Metric 1 -->
+                            <div class="bg-brand-lightBlue/60 p-6 rounded-xl border border-gray-200/60 flex items-center space-x-4 shadow-sm">
+                                <div class="w-12 h-12 bg-white text-emerald-600 border border-gray-100 rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-tree"></i>
+                                </div>
+                                <div>
+                                    <span class="text-2xl md:text-3xl font-black text-brand-blue block leading-none">15,000</span>
+                                    <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest block mt-1" id="stat1-title">Trees Saved Annually</span>
+                                </div>
+                            </div>
+
+                            <!-- Metric 2 -->
+                            <div class="bg-brand-lightBlue/60 p-6 rounded-xl border border-gray-200/60 flex items-center space-x-4 shadow-sm">
+                                <div class="w-12 h-12 bg-white text-blue-600 border border-gray-100 rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-recycle"></i>
+                                </div>
+                                <div>
+                                    <span class="text-2xl md:text-3xl font-black text-brand-blue block leading-none">2.5M+</span>
+                                    <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest block mt-1" id="stat2-title">Pallets Recycled</span>
+                                </div>
+                            </div>
+
+                            <!-- Metric 3 -->
+                            <div class="bg-brand-lightBlue/60 p-6 rounded-xl border border-gray-200/60 flex items-center space-x-4 shadow-sm">
+                                <div class="w-12 h-12 bg-white text-amber-600 border border-gray-100 rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-dumpster"></i>
+                                </div>
+                                <div>
+                                    <span class="text-2xl md:text-3xl font-black text-brand-blue block leading-none">400</span>
+                                    <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest block mt-1" id="stat3-title">Landfill Waste Reduced</span>
+                                </div>
+                            </div>
+
+                            <!-- Metric 4 -->
+                            <div class="bg-brand-lightBlue/60 p-6 rounded-xl border border-gray-200/60 flex items-center space-x-4 shadow-sm">
+                                <div class="w-12 h-12 bg-white text-purple-600 border border-gray-100 rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-smog"></i>
+                                </div>
+                                <div>
+                                    <span class="text-2xl md:text-3xl font-black text-brand-blue block leading-none">1.2K</span>
+                                    <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest block mt-1" id="stat4-title">Carbon Footprint Offset</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section (Exact Replica of Screenshot 5) -->
+            <section class="py-16 bg-[#0B1E30] text-white relative">
+                <div class="container mx-auto px-6 text-center space-y-6">
+                    <h2 class="text-2xl md:text-[32px] font-black tracking-tight" id="cta-title">READY TO OPTIMIZE YOUR SUPPLY CHAIN IN HOUSTON?</h2>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-2">
+                        <button onclick="switchTab('quote')" class="bg-[#0F2942] hover:bg-brand-red text-white font-bold text-xs uppercase tracking-wider px-8 py-4 rounded border border-white/20 transition-all duration-200" id="cta-btn1">
+                            Initiate Quote Sequence
+                        </button>
+                        <a href="tel:+1 (346) 604-7419" class="bg-transparent border border-white/30 hover:bg-white/10 text-white font-bold text-xs uppercase tracking-wider px-8 py-4 rounded flex items-center justify-center gap-2 transition-all duration-200">
+                            <i class="fa-solid fa-phone"></i>
+                            <span id="cta-btn2">Call Dispatch</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- 2. GET QUOTE TAB PANEL (Procurement Form + SLA Tracker Widgets - Exact Replica of Screenshot 6) -->
+        <div id="tab-quote" class="hidden animate-fade-in">
+            <section class="py-16 bg-brand-lightBlue">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                        
+                        <!-- Left side Block: Formulation inputs -->
+                        <div class="lg:col-span-8 bg-white p-8 md:p-10 rounded-3xl border border-gray-200 shadow-lg space-y-8">
+                            <div class="space-y-2">
+                                <span class="text-xs font-black text-brand-red tracking-widest uppercase block" id="form-badge">TERMINAL ACTIVE</span>
+                                <h3 class="text-3xl font-black text-brand-blue tracking-tight" id="form-title">INITIALIZE PROCUREMENT QUOTE</h3>
+                                <p class="text-[13px] text-gray-500 leading-relaxed font-medium" id="form-desc">Enter supply parameters for rapid pricing, availability, and dispatch routing. All fields processed through strict automated SLA protocols.</p>
+                            </div>
+
+                            <!-- Front-end Form that submits directly to sales@akpallets.com -->
+                            <form id="procurement-form" action="https://api.web3forms.com/submit" method="POST" oninput="updateDataIntegrity()" class="space-y-6">
+                                <!-- Web3Forms Key Integration -->
+                                <input type="hidden" name="access_key" value="c126d388-3176-4089-83f2-6834c2d48227">
+                                <input type="hidden" name="to_email" value="sales@akpallets.com">
+                                <input type="hidden" name="subject" value="New Web Quote Request (JAK AK Pallets)">
+                                <input type="hidden" name="redirect" value="https://akpallets.com">
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    
+                                    <!-- Company Name -->
+                                    <div class="space-y-1.5">
+                                        <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-company">Company Name</label>
+                                        <div class="relative">
+                                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                                <i class="fa-solid fa-building"></i>
+                                            </span>
+                                            <input type="text" name="company_name" id="company_name" required placeholder="Enter corporate entity" class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all">
+                                        </div>
+                                    </div>
+
+                                    <!-- Contact Name -->
+                                    <div class="space-y-1.5">
+                                        <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-contact">Contact Name</label>
+                                        <div class="relative">
+                                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                                <i class="fa-solid fa-user"></i>
+                                            </span>
+                                            <input type="text" name="contact_name" id="contact_name" required placeholder="Authorized personnel" class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all">
+                                        </div>
+                                    </div>
+
+                                    <!-- Email Address -->
+                                    <div class="space-y-1.5">
+                                        <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-email">Email Address</label>
+                                        <div class="relative">
+                                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </span>
+                                            <input type="email" name="email" id="email" required placeholder="operations@domain.com" class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all">
+                                        </div>
+                                    </div>
+
+                                    <!-- Phone Number -->
+                                    <div class="space-y-1.5">
+                                        <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-phone">Phone Number</label>
+                                        <div class="relative">
+                                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </span>
+                                            <input type="tel" name="phone" id="phone" required placeholder="Direct line" class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all">
+                                        </div>
+                                    </div>
+
+                                    <!-- Pallet Type -->
+                                    <div class="space-y-1.5">
+                                        <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-type">Pallet Type</label>
+                                        <div class="relative">
+                                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                                <i class="fa-solid fa-box"></i>
+                                            </span>
+                                            <input type="text" name="pallet_type" id="pallet_type" required placeholder="e.g., Grade A 48x40" class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all">
+                                        </div>
+                                    </div>
+
+                                    <!-- Quantity -->
+                                    <div class="space-y-1.5">
+                                        <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-qty">Quantity</label>
+                                        <div class="relative">
+                                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                                                <i class="fa-solid fa-cubes"></i>
+                                            </span>
+                                            <input type="number" name="quantity" id="quantity" required placeholder="Volume" class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Urgency level -->
+                                <div class="space-y-1.5">
+                                    <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-urgency">Urgency Level</label>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <label class="border border-gray-200 bg-[#F8FAFC] rounded-lg p-3.5 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors">
+                                            <div class="flex items-center space-x-2">
+                                                <input type="radio" name="urgency" value="Standard" checked class="text-brand-blue focus:ring-brand-blue">
+                                                <span class="text-sm font-semibold text-gray-700" id="rad-std">Standard Delivery</span>
+                                            </div>
+                                            <i class="fa-solid fa-truck text-gray-400"></i>
+                                        </label>
+                                        <label class="border border-gray-200 bg-[#F8FAFC] rounded-lg p-3.5 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors">
+                                            <div class="flex items-center space-x-2">
+                                                <input type="radio" name="urgency" value="Rush" class="text-brand-blue focus:ring-brand-blue">
+                                                <span class="text-sm font-semibold text-brand-red font-bold" id="rad-rush">Rush Order</span>
+                                            </div>
+                                            <i class="fa-solid fa-bolt text-brand-red animate-pulse"></i>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Delivery Address -->
+                                <div class="space-y-1.5">
+                                    <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-addr">Delivery Address Coordinates</label>
+                                    <div class="relative">
+                                        <span class="absolute top-3.5 left-3 text-gray-400">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        <textarea name="delivery_address" id="delivery_address" required rows="2" placeholder="Enter full facility address, dock numbers, or precise routing instructions" class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Logistics Notes -->
+                                <div class="space-y-1.5">
+                                    <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider" id="lbl-notes">Additional Logistics Notes</label>
+                                    <div class="relative">
+                                        <span class="absolute top-3.5 left-3 text-gray-400">
+                                            <i class="fa-solid fa-file-invoice"></i>
+                                        </span>
+                                        <textarea name="logistics_notes" rows="2" placeholder="Facility requirements, gate codes, or specialized handling..." class="w-full pl-10 pr-4 py-3 bg-[#F8FAFC] border border-gray-200 rounded-lg text-[13px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-blue focus:bg-white transition-all"></textarea>
+                                    </div>
+                                </div>
+
+                               <!-- Submit Button -->
+                <button type="submit" id="submit-btn" class="w-full bg-[#0F2942] hover:bg-brand-red text-white text-center py-4 rounded-xl font-extrabold tracking-wider text-xs uppercase transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-[12px] transition-transform group-hover:translate-x-1" id="submit-icon"></i>
+                    <span id="submit-text">Submit Procurement Parameters</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="success-message" class="hidden p-12 text-center flex flex-col items-center justify-center h-full">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                <i class="fa-solid fa-check text-4xl text-green-500"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-brand-blue mb-2">Request Submitted!</h3>
+            <p class="text-gray-600 mb-6">Thank you. The details have been securely sent to <b>ibrahim.hammad.career@gmail.com</b>.</p>
+            <button onclick="resetForm()" class="px-6 py-2 border-2 border-brand-blue text-brand-blue rounded-lg font-bold hover:bg-brand-blue hover:text-white transition-colors">
+                Submit Another Request
+            </button><button onclick="resetForm()" class="px-6 py-2 border-2 border-brand-blue text-brand-blue rounded-lg font-bold hover:bg-brand-blue hover:text-white transition-colors">
+                Submit Another Request
+            </button>
+        </div>
+
+                            </form>
+                        </div>
+
+                        <!-- Right Side Tracker Widgets (Exact Replica of Screenshot 6) -->
+                        <div class="lg:col-span-4 space-y-6">
+                            
+                            <!-- SLA Protocol Details -->
+                            <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm space-y-6">
+                                <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-[#EFF6FF] text-brand-blue rounded-lg flex items-center justify-center">
+                                            <i class="fa-regular fa-clock text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-brand-blue text-[14px]" id="side-sla-h">SLA Protocol</h4>
+                                            <p class="text-[10px] text-gray-400">Real-time verification</p>
+                                        </div>
+                                    </div>
+                                    <span class="bg-emerald-50 text-emerald-700 text-[10px] font-black tracking-widest uppercase px-2.5 py-1 rounded">ACTIVE</span>
+                                </div>
+
+                                <!-- DATA INTEGRITY CHECK Indicator with dynamically updating bar -->
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-xs font-black text-gray-600">
+                                        <span class="uppercase tracking-wider">DATA INTEGRITY CHECK</span>
+                                        <span id="data-integrity-count">0/7</span>
+                                    </div>
+                                    <div class="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                                        <div id="data-integrity-bar" class="w-0 h-full bg-brand-red transition-all duration-300"></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-400 font-medium leading-relaxed">Complete all mandatory parameters to instantly broadcast to our logistics desk.</p>
+                                </div>
+
+                                <div class="bg-[#EFF6FF]/60 p-4 rounded-2xl flex items-center space-x-3.5">
+                                    <i class="fa-solid fa-hourglass text-brand-blue text-lg"></i>
+                                    <div>
+                                        <span class="text-xs font-extrabold text-brand-blue block">Guaranteed Reply SLA</span>
+                                        <span class="text-[11px] text-gray-500 block font-medium mt-0.5">Standard Response: Within 2 Hours</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AK Assurances Card -->
+                            <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm space-y-5">
+                                <h4 class="font-bold text-brand-blue text-sm pb-2 border-b border-gray-100">AK Assurances</h4>
+                                
+                                <div class="space-y-4">
+                                    <!-- Assurance 1 -->
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-7 h-7 bg-blue-50 text-brand-blue rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <i class="fa-solid fa-shield-halved text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <span class="text-xs font-bold text-brand-blue block leading-tight">Houston's Most Reliable Supply Chain Partner</span>
+                                            <p class="text-[10px] text-gray-400 mt-0.5">Ensuring zero logistical halts with rigid wooden build setups.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Assurance 2 -->
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-7 h-7 bg-emerald-50 text-emerald-600 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <i class="fa-solid fa-leaf text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <span class="text-xs font-bold text-brand-blue block leading-tight">Sustainable Wood Recovery Operations</span>
+                                            <p class="text-[10px] text-gray-400 mt-0.5">Protecting state woodlands via recycling cycles.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Assurance 3 -->
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-7 h-7 bg-blue-50 text-brand-blue rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <i class="fa-solid fa-circle-nodes text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <span class="text-xs font-bold text-brand-blue block leading-tight">Data-Driven Dispatch Routing Systems</span>
+                                            <p class="text-[10px] text-gray-400 mt-0.5">Optimizing shipment tracks for faster deliveries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer Area (Exact Replica of Screenshot 5 footer layout) -->
+    <footer class="bg-[#0B1E30] text-white pt-16 pb-8 border-t border-white/5">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-white/5">
+            
+            <!-- Corporate desc and Logo replication in footer -->
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 flex items-center justify-center bg-white rounded-lg p-1">
+                        <img src="ak-pallets-logo.jpeg" alt="AK Pallets Logo" class="w-8 h-8 object-contain" />
+                    </div>
+                    <span class="text-lg font-black tracking-wider">AK PALLET</span>
+                </div>
+                <p class="text-[13px] text-gray-400 max-w-sm leading-relaxed" id="footer-desc">
+                    Modernizing the pallet industry in Houston. AKPALLET delivers fast response, sustainable solutions, and reliable supply for B2B businesses.
+                </p>
+                <div class="space-y-1 pt-2">
+                    <p class="text-xs text-gray-400"><i class="fa-solid fa-envelope text-brand-red mr-2"></i>sales@akpallets.com</p>
+                    <p class="text-xs text-gray-400"><i class="fa-solid fa-phone text-brand-red mr-2"></i>+1 (346) 604-7419</p>
+                </div>
+            </div>
+
+            <!-- Corp Directory links -->
+            <div class="space-y-4">
+                <h5 class="font-extrabold text-[12px] text-brand-red uppercase tracking-wider" id="footer-links-h">Company</h5>
+                <ul class="space-y-2.5 text-xs text-gray-400 font-medium">
+                    <li><a href="#" onclick="switchTab('homepage')" class="hover:text-white transition-colors">Homepage</a></li>
+                    <li><a href="#" onclick="switchTab('quote')" class="hover:text-white transition-colors">Get Quote</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Channels (LinkedIn, Facebook, WhatsApp as requested) -->
+            <div class="space-y-4">
+                <h5 class="font-extrabold text-[12px] text-brand-red uppercase tracking-wider" id="footer-social-h">Follow Us</h5>
+                <p class="text-xs text-gray-400 leading-relaxed font-medium" id="footer-social-d">Stay connected with us for the latest news in sustainable pallet supply.</p>
+                <div class="flex space-x-3.5 pt-1">
+                    <a href="https://www.linkedin.com/in/ak-pallets-146a15410" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-white/5 hover:bg-brand-red rounded-full flex items-center justify-center transition-all text-sm">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61590283323491" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-white/5 hover:bg-brand-red rounded-full flex items-center justify-center transition-all text-sm">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/13466047419" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-white/5 hover:bg-green-600 rounded-full flex items-center justify-center transition-all text-sm">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Trademark bottom bar -->
+        <div class="container mx-auto px-6 pt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-500 font-medium">
+            <span>© 2026 AK PALLETS. All rights reserved. Registered under Texas timber laws.</span>
+            <span class="mt-2.5 sm:mt-0 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-green-500 block animate-pulse"></span>
+                Localhost & Cloud Server Compatibility Verified
+            </span>
+        </div>
+    </footer>
+
+    <!-- Interactive script block managing localization & data metrics -->
+    <script>
+(function(){const root=document.documentElement;document.addEventListener('pointermove',e=>{root.style.setProperty('--mx',(e.clientX/innerWidth*100)+'%');root.style.setProperty('--my',(e.clientY/innerHeight*100)+'%')});document.querySelectorAll('.ak-tilt').forEach(c=>{c.addEventListener('pointermove',e=>{if(innerWidth<768)return;let r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(900px) rotateX(${y*-5}deg) rotateY(${x*5}deg) translateY(-6px)`});c.addEventListener('pointerleave',()=>c.style.transform='')});const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('is-visible')),{threshold:.12});document.querySelectorAll('.ak-reveal').forEach(e=>o.observe(e));let box=document.getElementById('ak-particles');if(box)for(let i=0;i<28;i++){let p=document.createElement('span');p.className='ak-particle';p.style.left=Math.random()*100+'%';p.style.top=Math.random()*100+'%';p.style.animationDelay=Math.random()*8+'s';p.style.animationDuration=5+Math.random()*7+'s';box.appendChild(p)}let s=document.querySelector('.ak-pallet-scene');if(s)window.addEventListener('pointermove',e=>{if(innerWidth<768)return;s.style.transform=`translate3d(${(e.clientX/innerWidth-.5)*20}px,${(e.clientY/innerHeight-.5)*16}px,0)`})})();
+</script>
+<script>
+        // Switch layout tabs exactly matching client screenshots
+        function switchTab(tabId) {
+            const homeTab = document.getElementById('tab-homepage');
+            const quoteTab = document.getElementById('tab-quote');
+            const navHome = document.getElementById('nav-home');
+            const navQuote = document.getElementById('nav-quote');
+
+            if (tabId === 'homepage') {
+                homeTab.classList.remove('hidden');
+                homeTab.classList.add('block');
+                quoteTab.classList.remove('block');
+                quoteTab.classList.add('hidden');
+
+                navHome.classList.add('header-active-tab');
+                navHome.classList.remove('hover:text-brand-blue', 'text-gray-500');
+                navQuote.classList.remove('header-active-tab');
+                navQuote.classList.add('hover:text-brand-blue', 'text-gray-500');
+            } else if (tabId === 'quote') {
+                quoteTab.classList.remove('hidden');
+                quoteTab.classList.add('block');
+                homeTab.classList.remove('block');
+                homeTab.classList.add('hidden');
+
+                navQuote.classList.add('header-active-tab');
+                navQuote.classList.remove('hover:text-brand-blue', 'text-gray-500');
+                navHome.classList.remove('header-active-tab');
+                navHome.classList.add('hover:text-brand-blue', 'text-gray-500');
+            }
+
+            // Smooth scroll up when changing views
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Toggle mobile menu list
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+
+        // Integrity check of form filling (0/7 inputs monitored live)
+        function updateDataIntegrity() {
+            const form = document.getElementById('procurement-form');
+            const fields = [
+                form.company_name,
+                form.contact_name,
+                form.email,
+                form.phone,
+                form.pallet_type,
+                form.quantity,
+                form.delivery_address
+            ];
+            
+            let completed = 0;
+            fields.forEach(f => {
+                if (f && f.value.trim() !== "") {
+                    completed++;
+                }
+            });
+
+            // Refresh progress UI
+            document.getElementById('data-integrity-count').innerText = `${completed}/7`;
+            const bar = document.getElementById('data-integrity-bar');
+            const percentage = (completed / 7) * 100;
+            bar.style.width = `${percentage}%`;
+
+            // Adjust live status colors
+            if (completed === 7) {
+                bar.className = "h-full bg-emerald-500 transition-all duration-300";
+            } else if (completed >= 4) {
+                bar.className = "h-full bg-amber-500 transition-all duration-300";
+            } else {
+                bar.className = "h-full bg-brand-red transition-all duration-300";
+            }
+        }
+    </script>
+</body>
+</html>
