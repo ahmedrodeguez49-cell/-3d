@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>لوحة طلبات WOW Fashion</title>
+    <style>
+      :root { color-scheme: light; font-family: Cairo, Tahoma, Arial, sans-serif; --ink:#15192b; --muted:#687086; --lavender:#f3f2ff; --line:#e4e6ef; --blue:#5b5bd6; }
+      * { box-sizing: border-box; }
+      body { margin:0; min-height:100vh; background:linear-gradient(135deg,#f2f0ff,#fff 55%,#f7f8fc); color:var(--ink); }
+      .shell { width:min(1180px,calc(100% - 32px)); margin:0 auto; padding:32px 0 56px; }
+      header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:26px; }
+      .brand { display:flex; align-items:center; gap:14px; }
+      .mark { width:50px; height:50px; border-radius:16px; display:grid; place-items:center; background:var(--ink); color:#fff; font-weight:900; letter-spacing:-.08em; }
+      h1 { margin:0; font-size:clamp(25px,4vw,38px); letter-spacing:-.04em; }
+      .subtitle { color:var(--muted); margin:4px 0 0; }
+      button { border:0; border-radius:12px; padding:12px 18px; font:inherit; font-weight:700; cursor:pointer; }
+      button:disabled { opacity:.45; cursor:not-allowed; }
+      .dark { background:var(--ink); color:#fff; }
+      .light { background:#fff; color:var(--ink); border:1px solid var(--line); }
+      .card { background:rgba(255,255,255,.82); border:1px solid rgba(255,255,255,.9); border-radius:24px; box-shadow:0 18px 48px rgba(36,37,74,.09); padding:24px; }
+      .login { max-width:430px; margin:12vh auto 0; text-align:center; }
+      .login .mark { margin:0 auto 18px; }
+      label { display:block; text-align:right; font-weight:700; margin:14px 0 8px; }
+      input { width:100%; border:1px solid var(--line); border-radius:12px; padding:13px 14px; font:inherit; background:#fff; }
+      .login button { width:100%; margin-top:16px; }
+      .error { min-height:24px; color:#b3261e; margin:10px 0 0; }
+      .hidden { display:none !important; }
+      .toolbar { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:18px; }
+      .stats { display:flex; gap:10px; flex-wrap:wrap; }
+      .stat { background:var(--lavender); border-radius:14px; padding:10px 14px; color:#42456b; }
+      .actions { display:flex; gap:10px; flex-wrap:wrap; }
+      .notice { border-right:4px solid #f2bd42; background:#fff8e6; color:#6f5718; padding:12px 14px; border-radius:10px; margin:0 0 20px; line-height:1.8; }
+      .table-wrap { overflow:auto; border:1px solid var(--line); border-radius:16px; background:#fff; }
+      table { border-collapse:collapse; min-width:1120px; width:100%; }
+      th,td { padding:13px 14px; border-bottom:1px solid var(--line); text-align:right; vertical-align:top; }
+      th { background:#f7f7fb; color:#4c526a; font-size:13px; white-space:nowrap; }
+      td { font-size:14px; line-height:1.65; }
+      tr:last-child td { border-bottom:0; }
+      .empty { text-align:center; padding:50px 20px; color:var(--muted); }
+      .loading { color:var(--muted); padding:20px 0; }
+      @media (max-width:700px) { .shell { width:min(100% - 20px,1180px); padding-top:18px; } header { align-items:flex-start; } .card { padding:16px; border-radius:18px; } .toolbar { align-items:flex-start; } .actions { width:100%; } .actions button { flex:1; } }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section id="loginView" class="card login">
+        <div class="mark">WOW</div>
+        <h1>لوحة الطلبات</h1>
+        <p class="subtitle">سجّل الدخول لعرض الطلبات وتنزيل الملفات</p>
+        <form id="loginForm">
+          <label for="password">كلمة مرور الإدارة</label>
+          <input id="password" type="password" autocomplete="current-password" required placeholder="اكتب كلمة المرور" />
+          <button class="dark" type="submit">دخول</button>
+        </form>
+        <p id="loginError" class="error"></p>
+      </section>
+
+      <section id="dashboardView" class="hidden">
+        <header>
+          <div class="brand"><div class="mark">WOW</div><div><h1>طلبات WOW Fashion</h1><p class="subtitle">إدارة الطلبات وتنزيلها محليًا</p></div></div>
+          <button id="logoutButton" class="light">تسجيل الخروج</button>
+        </header>
+        <div class="card">
+          <div class="toolbar">
+            <div class="stats"><span class="stat">الطلبات الحالية: <b id="orderCount">0</b></span><span class="stat" id="lastUpdated">—</span></div>
+            <div class="actions"><button id="xlsxButton" class="dark" onclick="downloadOrders('xlsx')">تحميل Excel</button><button id="docxButton" class="light" onclick="downloadOrders('docx')">تحميل Word</button></div>
+          </div>
+          <div class="notice">بعد نجاح تنزيل أي ملف، يتم حذف الطلبات التي دخلت في هذا الملف من قاعدة البيانات. إذا كنت تريد الاحتفاظ بنسختين Excel وWord لنفس الطلبات، نزّل النسخة المطلوبة أولًا واحفظها قبل تنزيل الصيغة الأخرى.</div>
+          <div id="tableStatus" class="loading">جارٍ تحميل الطلبات...</div>
+          <div id="tableWrap" class="table-wrap hidden"><table><thead><tr><th>رقم</th><th>التاريخ</th><th>المنتج</th><th>السعر</th><th>المقاس / اللون</th><th>العميل</th><th>الهاتف</th><th>العنوان</th><th>المقاس التفصيلي</th></tr></thead><tbody id="ordersBody"></tbody></table></div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const loginView = document.getElementById("loginView");
+      const dashboardView = document.getElementById("dashboardView");
+      const loginError = document.getElementById("loginError");
+      const tableStatus = document.getElementById("tableStatus");
+      const tableWrap = document.getElementById("tableWrap");
+      const ordersBody = document.getElementById("ordersBody");
+      const orderCount = document.getElementById("orderCount");
+      const lastUpdated = document.getElementById("lastUpdated");
+      const xlsxButton = document.getElementById("xlsxButton");
+      const docxButton = document.getElementById("docxButton");
+
+      function escapeHtml(value) {
+        return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
+      }
+      function showDashboard() { loginView.classList.add("hidden"); dashboardView.classList.remove("hidden"); loadOrders(); }
+      function showLogin() { dashboardView.classList.add("hidden"); loginView.classList.remove("hidden"); }
+      async function checkStatus() {
+        const response = await fetch("/api/admin/status");
+        const status = await response.json();
+        if (status.authenticated) showDashboard();
+        else if (!status.configured) loginError.textContent = "لم يتم إعداد ADMIN_PASSWORD في بيئة الخادم بعد.";
+      }
+      document.getElementById("loginForm").addEventListener("submit", async (event) => {
+        event.preventDefault(); loginError.textContent = "";
+        const response = await fetch("/api/admin/login", { method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({ password:document.getElementById("password").value }) });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok) { loginError.textContent = data.error === "invalid_password" ? "كلمة المرور غير صحيحة." : "تعذر تسجيل الدخول."; return; }
+        document.getElementById("password").value = ""; showDashboard();
+      });
+      document.getElementById("logoutButton").addEventListener("click", async () => { await fetch("/api/admin/logout", { method:"POST" }); showLogin(); });
+      async function loadOrders() {
+        tableStatus.textContent = "جارٍ تحميل الطلبات..."; tableStatus.classList.remove("hidden"); tableWrap.classList.add("hidden");
+        const response = await fetch("/api/admin/orders");
+        if (response.status === 401) return showLogin();
+        const data = await response.json(); const orders = data.orders || [];
+        orderCount.textContent = orders.length; lastUpdated.textContent = `آخر تحديث: ${new Date().toLocaleTimeString("ar-EG")}`;
+        xlsxButton.disabled = docxButton.disabled = orders.length === 0;
+        if (!orders.length) { tableStatus.textContent = "لا توجد طلبات جديدة حاليًا."; return; }
+        tableStatus.classList.add("hidden"); tableWrap.classList.remove("hidden");
+        ordersBody.innerHTML = orders.map((order) => `<tr><td>${escapeHtml(order.id)}</td><td>${escapeHtml(new Date(order.created_at).toLocaleString("ar-EG"))}</td><td>${escapeHtml(order.product_name)}<br><small>${escapeHtml(order.product_name_en)}</small></td><td>${escapeHtml(order.price)} ج.م × ${escapeHtml(order.quantity)}</td><td>${escapeHtml(order.size)}<br>${escapeHtml(order.color)}</td><td>${escapeHtml(order.customer_name)}</td><td dir="ltr">${escapeHtml(order.phone)}</td><td>${escapeHtml(order.address)}</td><td>${escapeHtml(order.measurements)}</td></tr>`).join("");
+      }
+      async function downloadOrders(format) {
+        const button = format === "xlsx" ? xlsxButton : docxButton; button.disabled = true; button.textContent = "جارٍ التجهيز...";
+        try {
+          const response = await fetch(`/api/admin/export/${format}`);
+          if (response.status === 401) return showLogin();
+          if (!response.ok) throw new Error("export_failed");
+          const blob = await response.blob(); const url = URL.createObjectURL(blob); const link = document.createElement("a"); link.href = url; link.download = `wow-fashion-orders.${format}`; document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url);
+          setTimeout(loadOrders, 800);
+        } catch (_) { alert("تعذر تجهيز الملف. حاول مرة أخرى."); }
+        button.textContent = format === "xlsx" ? "تحميل Excel" : "تحميل Word";
+      }
+      checkStatus();
+    </script>
+  </body>
+</html>
